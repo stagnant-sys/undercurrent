@@ -25,6 +25,17 @@ svg {
     z-index:-1;
 }
 
+.backdrop {
+    display:none;
+    position:fixed;
+    z-index:2;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(152, 152, 152, 0.50);
+}
+
 .main-header {
     background-color: rgba(185, 29, 66, 0.65);
     padding:0.5rem 1.2rem;
@@ -43,6 +54,43 @@ svg {
 
 .mobile-nav {
     display:none;
+    background: #FFFEF2;
+    border-left: solid 3px rgb(185, 29, 66);
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    z-index:10;
+}
+
+.mobile-nav__items {
+    list-style-type: none;
+    text-align: left;
+    padding:2rem;
+    padding-top:0.7rem;
+    margin-top:0;
+}
+
+.mobile-nav__items .separator {
+    height:0.1rem;
+    width:100%;
+    background-color: rgb(185, 29, 66);
+    margin:1.5rem 0;
+}
+
+.mobile-nav__item {
+    margin:1rem 0;
+}
+
+.mobile-nav__item a {
+    text-decoration: none;
+    color:rgb(185, 29, 66);
+    font-weight: bold;
+}
+
+.mobile-nav__item a:hover,
+.mobile-nav__item a:active {
+    text-decoration: underline;
 }
 
 .mobile-nav__toggle {
@@ -52,6 +100,30 @@ svg {
 .mobile-nav__toggle:hover,
 .mobile-nav__toggle:active {
     cursor:pointer;
+}
+
+.desktop-nav {
+    display:none;
+    text-decoration: none;
+    color:white;
+    width:50vw;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+.desktop-nav__item:hover,
+.desktop-nav__item:active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.desktop-nav__item.separator {
+    width:0.2rem;
+    height:100%;
+    background-color: white;
 }
 
 .header-category {
@@ -147,4 +219,33 @@ svg {
 
 .more-text {
     display:none;
+}
+
+.main-footer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(66, 66, 66);
+    color:white;
+    padding:1rem;
+}
+
+.main-footer p {
+    margin:0.5rem;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color:white;
+}
+
+@media (min-width:1000px) {
+    .mobile-nav__toggle {
+        display:none;
+    }
+    .desktop-nav {
+        display:flex;
+        width: 40vw;
+        justify-content: space-around;
+    }
 }

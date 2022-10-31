@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>undercurrent</title>
+    <title>undercurrent reviews</title>
 </head>
 <body>
     <div class="background-image"></div>
+    <div class="backdrop"></div>
 
     <header class="main-header">
         <a class="main-header__title" href="index.html">𝕦𝕟𝕕𝕖𝕣𝕔𝕦𝕣𝕣𝕖𝕟𝕥</a>
@@ -18,6 +19,15 @@
         </div>
         <nav class="mobile-nav">
             <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                    <a href="./index.html">Nouveautés</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="">Sélection</a>
+                </li>
+                <li class="mobile-nav__item separator">
+                    <div></div>
+                </li>
                 <li class="mobile-nav__item">
                     <a href="">Musique</a>
                 </li>
@@ -28,6 +38,14 @@
                     <a href="">Livres</a>
                 </li>
             </ul>
+        </nav>
+        <nav class="desktop-nav">
+            <a href="./index.html" class="desktop-nav__item">Nouveautés</a>
+            <a class="desktop-nav__item">Sélection</a>
+            <div class="desktop-nav__item separator">|</div>
+            <a class="desktop-nav__item">Musique</a>
+            <a class="desktop-nav__item">Jeux vidéo</a>
+            <a class="desktop-nav__item">Livres</a>
         </nav>
     </header>
 
@@ -105,6 +123,11 @@
         <div class="content-card__extra">
         </div>
     </div>
+
+    <footer class="main-footer">
+        <p>2022 &#169; Juneco Web Services</p>
+        <a href=''>A propos</a>
+    </footer>
 
     <script src='./main.js'></script>
 </body>
