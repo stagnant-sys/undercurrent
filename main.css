@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin:0;
+}
+
+body {
+    margin:0;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+svg {
+    margin:0;
+}
+
+.background-image {
+    background: url("./images/pexels-dids-3824262.jpg");
+    background-size:cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+
+.main-header {
+    background-color: rgba(185, 29, 66, 0.65);
+    padding:0.5rem 1.2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 3px solid rgb(185, 29, 66);
+}
+
+.main-header__title {
+    color: white;
+    font-size:1.8rem;
+    text-decoration: none;
+}
+
+.mobile-nav {
+    display:none;
+}
+
+.mobile-nav__toggle {
+    height:30px;
+}
+
+.mobile-nav__toggle:hover,
+.mobile-nav__toggle:active {
+    cursor:pointer;
+}
+
+.header-category {
+    color:white;
+    margin: 0.5rem 0;
+    background-color: rgba(185, 29, 66, 0.90);
+    padding:0.5rem 1.2rem;
+    text-align: center;
+    border-bottom: 3px solid rgb(185, 29, 66);
+}
+
+.content-card {
+    position:relative;
+    max-width:90%;
+    background:white;
+    padding:1rem;
+    margin:auto;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border-radius:3px;
+    box-shadow:2px 2px 5px gray;
+}
+
+.card-category {
+    position:absolute;
+    right:0.4rem;
+    top:0.4rem;
+    display:inline-block;
+    padding:0.2rem 0.4rem;
+    border-radius:4px;
+    color:white;
+    font-size:0.7rem;
+}
+
+.musique-category {
+    background-color: rgba(185, 29, 66, 0.90);
+}
+
+.jv-category {
+    background-color: rgba(41, 75, 103, 0.90);
+}
+
+.content-card__image {
+    display:block;
+    width:50%;
+    max-width:500px;
+    margin:auto;
+    margin-bottom:1rem;
+    margin-top:1rem;
+    border-radius:3px;
+    box-shadow: 1px 1px 1px;
+}
+
+.content-card__title {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.1rem;
+}
+
+.content-card__subtitle {
+    text-align: center;
+    color:grey;
+    font-style:italic;
+    margin-bottom:1rem;
+}
+
+.content-card__text {
+    text-align: justify;
+    font-weight: 200;
+}
+
+.content-card__text p {
+    margin:0.5rem;
+}
+
+.content-card__extra {
+    color:grey;
+    font-style:italic;
+    font-size:0.8rem;
+}
+
+.content-card__extra p,
+.content-card__extra ol {
+    margin:0;
+}
+
+.more-text__button,
+.collapse-text__button {
+    margin: 0.5rem;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.more-text {
+    display:none;
+}
