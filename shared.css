@@ -263,4 +263,8 @@ svg {
         flex-direction: row;
         justify-content: center;
     }
+
+    .content-card {
+    max-width:70%;
+    }
 }
