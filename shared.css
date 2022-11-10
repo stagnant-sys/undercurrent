@@ -151,7 +151,7 @@ svg {
     position:relative;
     max-width:90%;
     background:white;
-    padding:1rem;
+    padding:1.5rem;
     margin:auto;
     margin-top:1rem;
     margin-bottom:1rem;
@@ -209,10 +209,11 @@ svg {
 }
 
 .content-card__text p {
-    margin:0.5rem;
+    margin-bottom:0.5rem;
 }
 
 .content-card__extra {
+    display:none;
     color:grey;
     font-style:italic;
     font-size:0.8rem;
@@ -225,7 +226,7 @@ svg {
 
 .more-text__button,
 .collapse-text__button {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
     font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
@@ -271,6 +272,32 @@ svg {
     }
 
     .content-card {
-    max-width:70%;
+    /*max-width:70%;*/
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2rem 2rem auto;
+    grid-template-areas:"cover titre"
+                        "cover sous-titre"
+                        "cover texte"
+    }
+    .content-card__image {
+        grid-area: cover;
+        width:80%;
+    }
+    .content-card__extra {
+        grid-area: extra;
+        justify-self:start;
+        display:none;
+    }
+    .content-card__title {
+        grid-area: titre;
+        text-align: left;
+    }
+    .content-card__subtitle {
+        grid-area: sous-titre;
+        text-align: left;
+    }
+    .content-card__text {
+        grid-area: texte;
     }
 }
