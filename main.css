@@ -82,15 +82,19 @@
 
 @media (min-width:1000px) {
 .news-container {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 30%);
+    grid-column-gap: 2rem;
+    justify-content: center;
 }
 
 .content-card__new {
     display:flex;
     flex-direction: column;
     position:relative;
-    max-width:30%;
+    max-width:100%;
     background:white;
     padding:1rem;
     margin:auto;
