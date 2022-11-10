@@ -57,7 +57,7 @@ svg {
 }
 
 .mobile-nav {
-    display:none;
+    transform: translateX(100%);
     background: #FFFEF2;
     border-left: solid 3px rgb(185, 29, 66);
     position:fixed;
@@ -65,6 +65,11 @@ svg {
     right:0;
     height:100vh;
     z-index:10;
+    transition: transform 300ms ease-out;
+}
+
+.open-menu {
+    transform: translateX(0);
 }
 
 .mobile-nav__items {

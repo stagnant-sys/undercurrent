@@ -9,12 +9,12 @@ let moreText = document.querySelectorAll('.more-text');
 let collapseTextButton = document.querySelectorAll('.collapse-text__button');
 
 mobileNavToggle.addEventListener('click', function () {
-    mobileNav.style.display='block';
+    mobileNav.classList.add('open-menu');
     backdrop.style.display='block';
 })
 
 backdrop.addEventListener('click', function() {
-    mobileNav.style.display='none';
+    mobileNav.className='mobile-nav';
     backdrop.style.display='none';
 })
 
