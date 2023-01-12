@@ -12,19 +12,19 @@ let extraInfo = document.querySelectorAll('.content-card__extra');
 mobileNavToggle.addEventListener('click', function () {
     mobileNav.classList.add('open-menu');
     backdrop.style.display='block';
-})
+});
 
 backdrop.addEventListener('click', function() {
     mobileNav.className='mobile-nav';
     backdrop.style.display='none';
-})
+});
 
 for (let i=0; i < moreTextButton.length; i++) {
     moreTextButton[i].addEventListener('click', function() {
         moreText[i].style.display='block';
         extraInfo[i].style.display='block';
         moreTextButton[i].style.display='none';
-})
+});
 }
 
 for (let i=0; i < collapseTextButton.length; i++) {
@@ -32,5 +32,5 @@ for (let i=0; i < collapseTextButton.length; i++) {
         moreText[i].style.display='none';
         extraInfo[i].style.display='none';
         moreTextButton[i].style.display='block';
-})
+});
 }
